@@ -1,0 +1,13 @@
+.nav-button {
+    position: relative;
+    right:-73%;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: medium;
+    border: none;
+    background-color: rgb(225, 224, 224);
+}
+
+.ant-tabs {
+    border-bottom: none !important; /* This will remove the line under the tabs */
+}
