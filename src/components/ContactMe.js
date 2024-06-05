@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Input, Button, Card, Row, Col } from "antd";
 import { GithubOutlined, MailOutlined, TwitterOutlined, LinkedinOutlined, PhoneOutlined, EnvironmentOutlined } from '@ant-design/icons';
+import './css/navbar.css';
 
 const ContactMe = () => {
     const onFinish = (values) => {
@@ -13,15 +14,15 @@ const ContactMe = () => {
       };
 
     return (
-        <div id="contact" style={{ maxWidth: 1400, margin: 'auto', paddingTop:'50px' }}>
+        <div id="contact" class="transition-swipe" style={{ maxWidth: 1800, margin: 'auto', paddingTop:'50px',backgroundColor: 'black' }}>
           <Card 
         style={{
-            height: '600px',
+            height: '650px',
             left:'10%',
             width: '80%',
-            borderRadius:'0px',
-            boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4)',
-            // backgroundColor:'#D3D3D3',
+            borderRadius:'5px',
+            // boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4)',
+            // backgroundColor:'black',
         }}
         >   
       <h1 style={{textAlign:'center'}}>Contact Me</h1>
@@ -30,6 +31,8 @@ const ContactMe = () => {
         onFinish={onFinish}
         onFinishFailed={onFinishFailed}
         layout="vertical"
+        action="mailto:kpranathi48@gmail.com"
+        // style={{backgroundColor:'black', color:'white'}}
       >
         <Form.Item
           label="Name"
@@ -71,35 +74,35 @@ const ContactMe = () => {
       <Row justify="center" align="middle">
         <Col span={24} md={8} style={{ textAlign: 'center' }}>
           <div>
-            <h3>Contact Info</h3>
-            <p><PhoneOutlined /> 123456789</p>
-            <p><MailOutlined /> lalit@divakarla.com</p>
+            <h3>&emsp; Contact Info</h3>
+            <p><PhoneOutlined /> &emsp; +1 (763)-913-1259</p>
+            <p><MailOutlined /> &emsp; divak014@umn.edu</p>
           </div>
         </Col>
         <Col span={24} md={8} style={{ textAlign: 'center' }}>
           <div>
             <h3>Address</h3>
-            <p><EnvironmentOutlined /> 123 Street Name, City, Country</p>
+            <p><EnvironmentOutlined /> St.Paul, Minnesota</p>
           </div>
         </Col>
         <Col span={24} md={8} style={{ left:'10%', display:'inline-flex' }}>
         <Col>
-          <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/lalit" target="_blank" rel="noopener noreferrer">
             <GithubOutlined style={{ fontSize: '24px', marginRight: '10px', color:'white' }} />
           </a>
         </Col>
         <Col>
-          <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">
+          <a href="https://linkedin.com/in/lalit" target="_blank" rel="noopener noreferrer">
             <LinkedinOutlined style={{ fontSize: '24px', marginRight: '10px', color:'white' }} />
           </a>
         </Col>
-        <Col>
+        {/* <Col>
           <a href="https://twitter.com/yourtwitter" target="_blank" rel="noopener noreferrer">
             <TwitterOutlined style={{ fontSize: '24px', marginRight: '10px', color:'white' }} />
           </a>
-        </Col>
+        </Col> */}
         <Col>
-          <a href="mailto:youremail@example.com" target="_blank" rel="noopener noreferrer">
+          <a href="mailto:divak014@umn.edu" target="_blank" rel="noopener noreferrer">
             <MailOutlined style={{ fontSize: '24px', color:'white' }} />
           </a>
         </Col>

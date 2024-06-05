@@ -1,6 +1,8 @@
 import { Sunburst } from "@ant-design/charts";
 import { Card } from "antd";
 import React from 'react';
+import './css/navbar.css';
+
 
 const Skills = () => {
     const data = {
@@ -140,17 +142,17 @@ const Skills = () => {
       },
     };
     return (
-        <div id="skills" style={{paddingTop:'55px'}}>
-        <Card 
+        <div id="skills" class="transition-swipe" style={{paddingTop:'55px', backgroundColor:'black'}}>
+        {/* <Card 
         style={{
             height: '900px',
             left:'10%',
             width: '80%',
-            borderRadius:'0px',
+            borderRadius:'5px',
             boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4)',
-            backgroundColor:'#D3D3D3',
+            backgroundColor:'white',
         }}
-        >           
+        >            */}
         <Sunburst style={{ 
                     height: '850px',
                     left:'50%',
@@ -158,7 +160,7 @@ const Skills = () => {
                     }}
                 {...config}/>
 
-        </Card> 
+        {/* </Card>  */}
         </div>
     );
 }

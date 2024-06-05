@@ -11,3 +11,70 @@
 .ant-tabs {
     border-bottom: none !important; /* This will remove the line under the tabs */
 }
+
+.navbar {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    background-size: cover;
+    color: white;
+    padding: 10px 20px;
+    z-index: 9999;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li:last-child {
+    margin-right: 0;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-list li a:hover {
+    color: rgb(195, 190, 190);
+    font-size: 19px;
+    transition: 200ms;
+}
+
+.transition-swipe-about {
+    transition: 500ms;
+    transform: translateY(0);
+    padding-top: 50px; 
+    position:relative;
+    background-color: black;
+}
+
+html.is-animating .transition-swipe-about {
+    transform: translateY(100%);
+}
+
+.transition-swipe-projects {
+    transition: 500ms;
+    transform: translateY(0);
+    transform-origin: bottom;
+    position: relative; 
+    padding-top: 50px;
+    background-color: black;
+}
+
+html.is-animating .transition-swipe-projects {
+    transform: translateY(100%);
+}
