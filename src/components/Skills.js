@@ -1,5 +1,5 @@
 import { Sunburst } from "@ant-design/charts";
-import { Card } from "antd";
+// import { Card } from "antd";
 import React from 'react';
 import './css/navbar.css';
 

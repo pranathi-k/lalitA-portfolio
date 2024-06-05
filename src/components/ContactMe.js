@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Input, Button, Card, Row, Col } from "antd";
-import { GithubOutlined, MailOutlined, TwitterOutlined, LinkedinOutlined, PhoneOutlined, EnvironmentOutlined } from '@ant-design/icons';
+import { GithubOutlined, MailOutlined, LinkedinOutlined, PhoneOutlined, EnvironmentOutlined } from '@ant-design/icons';
 import './css/navbar.css';
 
 const ContactMe = () => {

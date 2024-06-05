@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    color: black;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+body .light {
+    background: rgb(225, 224, 224);
+    color: black;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+body .dark {
+    background: rgb(30, 30, 30);
+    color: rgb(250, 250, 250);
+    overflow: hidden;
+    overflow-y: scroll;
+}
